@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.llama {
+    background: radial-gradient(circle, #4285f4, #d96570);
+    background-clip: text;
+    color: transparent;
+    animation: llama 15s linear infinite;
+    background-size: 200% 200%;
+}
+
+.llama-button {
+    background: radial-gradient(circle, #4285f4, #d96570);
+    animation: llama 15s linear infinite;
+    background-size: 200% 200%;
+}
+
+.llama-button:hover {
+    background: #202020;
+}
+
+@keyframes llama {
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
